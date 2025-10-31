@@ -3,12 +3,12 @@ public class Square {
 
 public static void main(String[] args) {
 
-boolean[] result = PerfectSquare(new int[] {2,4,49,100});
+boolean[] result = perfectSquare(new int[] {2,4,49,100});
 System.out.print(Arrays.toString(result));
 }
 
 
-public static boolean[] PerfectSquare(int[] numbers) {
+public static boolean[] perfectSquare(int[] numbers) {
 	boolean[] output = new boolean[numbers.length];
 	int count = 0;
 	while(count < numbers.length) {
