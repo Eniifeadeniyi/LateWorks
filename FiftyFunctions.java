@@ -281,6 +281,28 @@ public static void multiplesInRange(int maximum, int minimum) {
 }
 
 //39
-public static 
+public static String simpleQuiz(String userAnswer) {
+	String answer = "Paris";
+	if(userAnswer.equalsIgnoreCase(answer)) return "Correct";
+	else return "Try again!";
+}
+
+//40
+public static void reverseCounting() {
+	for(int count = 20; count >= 1; count--) {
+		if(count == 15) System.out.print("Halfway!");
+		System.out.print(count + " ");
+	}
+}
+
+//41
+public static void nestedNumberChecker() {
+	for(int number = 1; number <= 15; number++) {
+		if(number % 15 == 0) System.out.print("FizzBuzz!");
+		if(number % 3 == 0 & number % 5 != 0)  System.out.print("Fizz!");
+		if(number % 5 == 0 & number % 3 != 0)  System.out.print("Buzz!");
+	}
+}
+		
 
 }

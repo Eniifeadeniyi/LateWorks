@@ -126,7 +126,8 @@ FiftyFunctions.multiplesInRange(max, min);
 
 System.out.println();
 
-//39
+//41
+FiftyFunctions.nestedNumberChecker();
 
 }
 }
