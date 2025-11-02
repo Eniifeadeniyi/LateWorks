@@ -3,7 +3,7 @@ public class Main {
 
 public static void main(String[] args) {
 Scanner input = new Scanner(System.in);
-/*
+
 //1
 System.out.print("What's your name?: ");
 String userName = input.nextLine();
@@ -141,9 +141,41 @@ for(int count = 0; count < scores.length;) {
 	}
 }
 System.out.println(FiftyFunctions.gradeAverage(scores));
-*/
+
 
 //45
 FiftyFunctions.nestedLoopGrid();
+
+//46
+System.out.print("Enter a number: ");
+int numb = input.nextInt();
+System.out.println(FiftyFunctions.primeNumberCheck(numb));
+
+
+//47
+double[] temperatures = new double[5];
+for(int count = 0; count < temperatures.length;){
+	System.out.print("Enter temperature in celsius: ");
+	double celsius = input.nextDouble();
+	if(celsius >= -273) {
+		temperatures[count] = celsius;
+		count++;}
+}	
+FiftyFunctions.temperatureConverter(temperatures);
+
+//48
+for(int count = 1; count <= 3; count++) {
+	System.out.print("Enter a colour: ");
+	String color = input.next();
+	String check = FiftyFunctions.nestedColorGame(color);
+	if(check.equals("Correct!")) break;
+	System.out.print(check);
+	}
+
+//49
+System.out.println(FiftyFunctions.sumOfMultiples());
+
+//50
+FiftyFunctions.numberPyramid();
 }
 }

@@ -328,6 +328,49 @@ public static void nestedLoopGrid() {
 	System.out.println();}
 }
 
+//46
+public static String primeNumberCheck(int number) {
+	int countDivisor = 0;
+	for(int divisor = 1; divisor <= number; divisor++) {
+		if(number % divisor == 0) countDivisor += 1;
+	}
+	if(countDivisor > 2) return "Not Prime!";
+	else return "Prime!";
 		
+}
+
+//47
+public static void temperatureConverter(double[] temperatures) {
+	for(double temperature : temperatures) {
+		double answer = (temperature * 9) / 5;
+		answer += 32;
+		System.out.println(answer);
+	}
+}
+
+//48
+public static String nestedColorGame(String color) {
+	String favoriteColor = "blue";
+	if(color.equalsIgnoreCase(favoriteColor)) return "Correct!";
+	if(color.equalsIgnoreCase("green")) return "Close!";
+	else return "Wrong!";
+}
+
+//49
+public static int sumOfMultiples() {
+	int sum = 0;
+	for(int count = 1; count <= 50; count++) {
+		if(count % 3 == 0 | count % 5 == 0) sum += count;}
+	return sum;
+}
+
+//50
+public static void numberPyramid() {
+	for(int row = 1; row <= 4; row++) {
+		for(int column = 1; column <= row; column++) {
+			System.out.print(row);}
+	System.out.println();
+	}
+}
 
 }
