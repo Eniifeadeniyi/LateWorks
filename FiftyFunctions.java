@@ -303,6 +303,31 @@ public static void nestedNumberChecker() {
 		if(number % 5 == 0 & number % 3 != 0)  System.out.print("Buzz!");
 	}
 }
+
+//42
+public static String pinEntrySystem(String password) {
+	String pin = "1234";
+	if(password.equals(pin)) return "Access granted!";
+	else return "Try again!";
+}
+
+//44
+public static double gradeAverage(int[] scores) {
+	double sum = 0.0;
+	for(int score : scores){
+		sum += score;}
+	double average = sum / 5;
+	return average;
+}
+
+//45
+public static void nestedLoopGrid() {
+	for(int row = 1; row <= 5; row++) {
+		for(int column = 1; column <= 3; column++) {
+			System.out.print(column);}
+	System.out.println();}
+}
+
 		
 
 }

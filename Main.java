@@ -70,7 +70,7 @@ input.nextLine();
 System.out.print("Enter a word: ");
 String word = input.next();
 System.out.println(FiftyFunctions.countingVowels(word));
-*/
+
 
 //30
 FiftyFunctions.nestedLoopSquare();
@@ -129,5 +129,21 @@ System.out.println();
 //41
 FiftyFunctions.nestedNumberChecker();
 
+System.out.println();
+//44
+int[] scores = new int [5];
+for(int count = 0; count < scores.length;) {
+	System.out.print("Enter a score: ");
+	int score = input.nextInt();
+	if(score <= 100 & score >= 0) {
+		scores[count] = score;
+		 count++;
+	}
+}
+System.out.println(FiftyFunctions.gradeAverage(scores));
+*/
+
+//45
+FiftyFunctions.nestedLoopGrid();
 }
 }
